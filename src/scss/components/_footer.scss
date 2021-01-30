@@ -1,0 +1,115 @@
+.footer {
+    height: 180px;
+    padding: 45px 113px;
+    display: flex;
+    flex-direction: column;
+    background-color: #8F79D4;
+    color: #FFFFFF;
+    .topBlockFooter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 900;
+        .topNavFooter {
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                font-weight: 900;
+                li {
+                    margin-left: 40px;
+                }
+                li:nth-child(1) {
+                    margin-left: 0;
+                }
+            }
+        }
+        .topSocialFooter {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                color: #E7D9FF;
+                .socialImg {
+                    margin-right: 20px;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                li:nth-child(1) {
+                    margin-right: 20px;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+        .copyright {
+            font-weight: 500;
+            color: #E7D9FF;
+        }
+
+    }
+    .line {
+        height: 1px;
+        margin-top: 44px;
+        background-color: #D8BFFF;
+    }
+    .bottomBlockFooter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .bottomNavFooter {
+            margin-top: 30px;
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                li {
+                    margin-left: 25px;
+                    img {
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+                li:nth-child(1) {
+                    margin-left: 0;
+                }
+            }
+        }
+        .scrollButton {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25px;
+            p {
+                font-weight: 900;
+                margin-right: 15px;
+            }
+            button {
+                width: 40px;
+                height: 40px;
+                opacity: 0.5;
+                box-sizing: border-box;
+                border: 1px solid #D8BFFF;
+                border-radius: 50%;
+                background-color: #8F79D4;
+                img {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}
