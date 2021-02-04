@@ -1,0 +1,25 @@
+.newArriwal {
+    display: flex;
+    flex-direction: column;
+    .title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 114px 30px 112px;
+        span {
+            font-family: 'Roboto Slab';
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 30px;
+        }
+        p {
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .newProducts {
+        margin: 0 104px 70px 104px;
+    }
+}

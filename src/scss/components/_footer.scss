@@ -19,6 +19,7 @@
                 justify-content: center;
                 font-weight: 900;
                 li {
+                    cursor: pointer;
                     margin-left: 40px;
                 }
                 li:nth-child(1) {
@@ -42,6 +43,7 @@
                 .socialImg {
                     margin-right: 20px;
                     img {
+                        cursor: pointer;
                         width: 20px;
                         height: 20px;
                     }
@@ -78,6 +80,7 @@
                 li {
                     margin-left: 25px;
                     img {
+                        cursor: pointer;
                         width: 64px;
                         height: 64px;
                     }
@@ -98,6 +101,7 @@
                 margin-right: 15px;
             }
             button {
+                cursor: pointer;
                 width: 40px;
                 height: 40px;
                 opacity: 0.5;

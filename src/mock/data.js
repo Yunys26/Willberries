@@ -1,0 +1,38 @@
+export const new_arrival = [
+    {
+        "id": "Embroidered Hoodie-1",
+        "name": "Embroidered Hoodie",
+        "category": "Yellow/Lilac/Fuchsia",
+        "price": "89",
+        "img": "",
+        "value": "$",
+        "status": "new",
+    },
+    {
+        "id": "Faded Beach Trousers-2",
+        "name": "Faded Beach Trousers",
+        "category": "Yellow/Lilac/Fuchsia",
+        "price": "139",
+        "img": "",
+        "value": "$",
+        "status": "new",
+    },
+    {
+        "id": "Text T-Shirt-3",
+        "name": "Text T-Shirt",
+        "category": "white",
+        "price": "59",
+        "img": "",
+        "value": "$",
+        "status": "new",
+    },
+    {
+        "id": "Striped Long Sleeve Shirt-4",
+        "name": "Striped Long Sleeve Shirt",
+        "category": "Red/Sky Blue",
+        "price": "119",
+        "img": "",
+        "value": "$",
+        "status": "new",
+    },
+];
