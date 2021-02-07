@@ -11,10 +11,10 @@ const NewArrival = () => {
             </div>
             <div className="newProducts">
                 {new_arrival.map(({id, name, category, price, img, value, status}) => (
-                    <div className="card">
+                    <div key={id} className="card">
                         <div className="status"></div>
                         <div className="info-products">
-                            <img />
+                            <img src={img} alt={name} />
                             <p>{name}</p>
                             <p>{category}</p>
                             <p>{value + price}</p>

@@ -2,8 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import cart from '../resource/header/cart.svg';
+import { connect } from 'react-redux';
 
-const Header = () => (
+import actionIncrement from '../store/actionCreators/actionIncrment'
+
+import actionDecrement from '../store/actionCreators/actionIncrment'
+
+const Header = ({ actionIncrement, actionDecrement, counter}) => (
     <header className="header">
         <div className="logoHeader">
             <h1>Willberries</h1>
@@ -19,21 +24,32 @@ const Header = () => (
             </ul>
         </div>
         <div className="rightNavigationHeader">
-            <button className="cart buttonHeader">
+            <button className="cart buttonHeader" onClick={() => actionIncrement(2)}>
                 <img src={cart} alt="cart"/>
                 Cart
             </button>
-            <button className="logIn buttonHeader">
+            <button className="logIn buttonHeader" onClick={() => actionDecrement(1)}>
                 {/* <img src={cart} alt="cart"/> */}
-                Log in
+                {counter}
+                {/* Log In */}
             </button>
         </div>
     </header>
 )
+
+// Доступ к переменной состояния то есть хранилища
+const mapStateToProps = (state) => ({
+    ...state
+});
+// Импортируем сюда функции которые создают и направляют десйтвия
+const mapDispatchToProps = {
+    actionIncrement,
+    actionDecrement
+}
 
 
 Header.propTypes = {
 
 };
 
-export default Header;
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
